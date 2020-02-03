@@ -47,7 +47,7 @@ Also, Chromium runs a lot faster than Firefox on this setup, so if you want it, 
 
 Then you're good to go.
 
-Once you know that your system is stable, you can remove the line that says "maxcpus=4" from /boot/extlinux/extlinux.conf, and that will give you another cpu thread. Disabling seems to add stability, but removing it on the image i'm currently on hasn't caused any problems.
+Once you know that your system is stable, you can remove the boot variable "maxcpus=4" from /boot/extlinux/extlinux.conf, and that will give you another cpu thread, and a surprisingly huge speed boost. Disabling seems to add stability, but removing it on the image i'm currently on hasn't caused any problems.
 
 To get audio working, you'll need to unmute 'Left Headphone Mixer Left DAC' and 'Right Headphone Mixer Right DAC'. Gnome-alsamixer isn't avaliable in the official repos but it can be grabbed here https://rpmfind.net/linux/rpm2html/search.php?query=gnome-alsamixer
 
