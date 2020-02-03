@@ -49,6 +49,8 @@ Then you're good to go.
 
 Once you know that your system is stable, you can remove the line that says "maxcpus=4" from /boot/extlinux/extlinux.conf, and that will give you another cpu thread. Disabling seems to add stability, but removing it on the image i'm currently on hasn't caused any problems.
 
+To get audio working, you'll need to unmute 'Left Headphone Mixer Left DAC' and 'Right Headphone Mixer Right DAC'. Gnome-alsamixer isn't avaliable in the official repos but it can be grabbed here https://rpmfind.net/linux/rpm2html/search.php?query=gnome-alsamixer
+
 I'll be creating and adding kernel rpm's up here somewhat frequently. This image contains the latest kernel from the pinebook pro gitlab page. I'll probably start creating two kernels for both my Fedora images and openSUSE images. One with an selinux label and the other with an apparmor label. Both could be used on either os, given your preferences.
 
 Anyway, hope you enjoy, and let me know if there are any issues!
